@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lOn-xL-O7X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timers Table View Controller-->
+        <scene sceneID="xSv-EC-cg2">
+            <objects>
+                <tableViewController storyboardIdentifier="TimersTableViewController" id="lOn-xL-O7X" customClass="TimersTableViewController" customModule="Countdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ir6-fM-hQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountdownCell" id="1ZS-Rf-EDq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ZS-Rf-EDq" id="6uj-4U-vkd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Countdown Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOD-1d-eOF">
+                                            <rect key="frame" x="16" y="11" width="134.5" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lorem ipsum" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-Cg-n3q">
+                                            <rect key="frame" x="275.5" y="19" width="83.5" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1g7-Cg-n3q" firstAttribute="trailing" secondItem="6uj-4U-vkd" secondAttribute="trailingMargin" id="6zw-dC-goU"/>
+                                        <constraint firstItem="1g7-Cg-n3q" firstAttribute="top" secondItem="vOD-1d-eOF" secondAttribute="bottom" constant="8" id="Gob-Qk-wyG"/>
+                                        <constraint firstItem="vOD-1d-eOF" firstAttribute="leading" secondItem="6uj-4U-vkd" secondAttribute="leadingMargin" id="TI4-5U-e05"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1g7-Cg-n3q" secondAttribute="bottom" id="a3z-XT-uGD"/>
+                                        <constraint firstItem="1g7-Cg-n3q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6uj-4U-vkd" secondAttribute="leadingMargin" id="cWN-1Z-hO9"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="vOD-1d-eOF" secondAttribute="trailing" id="fhA-zp-lEr"/>
+                                        <constraint firstItem="vOD-1d-eOF" firstAttribute="top" secondItem="6uj-4U-vkd" secondAttribute="topMargin" id="qoW-9M-gob"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lOn-xL-O7X" id="jR0-mb-JCk"/>
+                            <outlet property="delegate" destination="lOn-xL-O7X" id="8iw-j9-aXf"/>
+                        </connections>
+                    </tableView>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9m-Hk-d2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
